@@ -1,0 +1,34 @@
+Trackname = "Spa-Francorchamps"
+spa_track = [
+    ("Start Straight",   "straight", 368, 17, None, None),
+    ("La Source",        "corner",    60,  9,  35, "R"),    # slow hairpin, 35 ok
+    ("Eau Rouge Entry",  "straight", 580,  9, None, None),
+    ("Eau Rouge",        "corner",   160,  9,  190, "L"),   # 90 -> 190
+    ("Raidillon",        "corner",   420,  9, 250, "R"),    # 140 -> 330
+    ("Kemmel Straight",  "straight", 800,  9, None, None),
+    ("Les Combes P1",    "corner",   82,  9,  60, "R"),
+    ("Les Combes P2",    "corner",   78,  9,  60, "L"),
+    ("Les Combes P3",    "straight", 80,  9,  None, None),
+    ("Les Combes P4",    "corner",   64,  9,  75, "L"),
+    ("Bruxelles P1",     "straight", 285,  9, None, None),
+    ("Bruxelles P2",     "corner",   172,  9, 120, "R"),    # 180 -> 120
+    ("Bruxelles P3",     "straight", 127,  9, None, None),
+    ("No Name",          "corner",   64,  9, 110, "L"),
+    ("Pouho P1",         "straight", 445,  9, None, None),
+    ("Pouhon P2",        "corner",   375,  9, 160, "L"),    # 180 -> 160
+    ("Pouhon P3",         "straight", 315,  9, None, None),
+    ("Fagnes P1",        "corner",   160,  9,  70, "R"),
+    ("Fagnes P2",        "corner",   145,  9,  70, "L"),
+    ("Fagnes P3",        "straight", 183,  9, None, None),
+    ("Campus P1",        "corner",   90,  9,  60, "R"),
+    ("Campus P2",        "straight", 113,  9, None, None),
+    ("Stavelot",         "corner",   200,  9, 160, "R"),
+    ("Paul Frere P1",    "straight", 500,  9, None, None),
+    ("Paul Frere P2",    "corner",   180,  9,  75, "L"),
+    ("Paul Frere P3",    "straight", 190,  9, None, None),
+    ("Blanchimont",      "corner",   100,  9, 250, "L"),    # 46 -> 900
+    ("Bus Stop P1",      "straight", 465,  9, None, None),
+    ("Bus Stop P2",      "corner",   50,  9,  45, "R"),
+    ("Bus Stop P3",      "corner",   60,  9,  45, "L"),
+    ("Pit Straight",     "straight", 153,  9, None, None),
+]
