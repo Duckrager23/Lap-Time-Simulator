@@ -5,7 +5,16 @@ A physics-based Formula lap time simulation tool built in Python
 This program is a physics-based lap time calculator; it uses the set parameters of a car with physics formulas to calculate the time it would take said car to go around a track, all while approximating the racing line of the track as well. 
 
 ## How to run
-Simply download all of the files in the GitHub repo, and open the main file in a Python interpreter (Ensure all files are in the same folder and you are running Python 3). You will be prompted to pick from a pre-set configuration of cars: a formula car,gt3 car, and a road car. You may change the parameters as you please in the configs file. After this is done, the terminal will display your lap time, along with other valuable info, such as the track name/length and the forces generated, such as downforce. Lastly, you will be prompted if you would like to see the time for each track segment.
+**Dependencies:**
+- Python 3
+- NumPy
+- Matplotlib
+
+Install dependencies with:
+```
+pip install numpy matplotlib'
+```
+Simply download all files from the GitHub repo into the same folder and run `main.py` in a Python interpreter. You will be prompted to pick from a preset car configuration: F1, GT3, or road car. Parameters can be modified in `Configs.py`. The terminal will display your lap time along with additional data such as track length and downforce generated. You will then be prompted to view speeds for each track segment
 
 ## Project structure
 - `main.py` - main simulation loop
