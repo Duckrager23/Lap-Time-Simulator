@@ -14,6 +14,11 @@ Install dependencies with:
 ```
 pip install numpy matplotlib
 ```
+or if that doesn't work use this instead
+```
+pip3 install numpy matplotlib
+```
+
 Simply download all files from the GitHub repo into the same folder and run `main.py` in a Python interpreter. You will be prompted to pick from a preset car configuration: F1, GT3, or road car. Parameters can be modified in `Configs.py`. The terminal will display your lap time along with additional data such as track length and downforce generated. You will then be prompted to view speeds for each track segment
 
 ## Project structure
