@@ -131,6 +131,10 @@ end
 laptime = 0.0;
 Velocity = 0.0;
 
+distance_travelled = 0.0;
+plot_distance = 0;
+plot_speed = 0;
+
 for i = 1:length(spa_racing_line)
 
     name = spa_racing_line(i).name;
@@ -143,6 +147,11 @@ for i = 1:length(spa_racing_line)
         Velocitytarget = car.maxcornerspeed(radius, density, gravity);
         laptime = laptime + length_value / max(Velocitytarget, 0.1);
         Velocity = Velocitytarget;
+
+        distance_travelled = distance_travelled + length_value;
+
+        plot_distance(end + 1) = distance_travelled;
+        plot_speed(end + 1) = Velocity;
 
         if contains(name, "entry")
             clean_name = erase(name, " entry");
@@ -163,6 +172,11 @@ for i = 1:length(spa_racing_line)
 
         laptime = laptime + time;
         Velocity = velocity;
+
+        distance_travelled = distance_travelled + length_value;
+
+        plot_distance(end + 1) = distance_travelled;
+        plot_speed(end + 1) = Velocity;
 
         segment_speeds(end + 1, :) = {name, "straight", velocity};
     end
@@ -208,3 +222,14 @@ if seetime == "y"
         end
     end
 end
+
+%% Plot speed profile
+figure;
+
+plot(plot_distance, plot_speed * 3.6, 'LineWidth', 1.5);
+
+xlabel('Distance around track (m)');
+ylabel('Speed (km/h)');
+title('Simulated Speed Profile - Spa-Francorchamps');
+
+grid on;

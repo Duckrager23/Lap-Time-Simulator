@@ -1,5 +1,5 @@
 # Lap-Time-Simulator
-A physics-based Formula lap time simulation tool built in Python
+A physics-based lap-time simulation tool implemented in MATLAB and Python.
 
 ## Overview
 This program is a physics-based lap time calculator; it uses the set parameters of a car with physics formulas to calculate the time it would take said car to go around a track, all while approximating the racing line of the track as well. 
@@ -66,3 +66,12 @@ Acceleration = min(power/velocity × mass, grip force / mass) - drag / mass
 
 ## Known limitations and planned improvements
 Although this program models key aspects of vehicle dynamics, there are still many limitations to this program. Firstly, due to the lack of real-world data, there are assumptions that we must make, such as having the grip coefficient equal the peak lateral forces of the car. Additionally, we assume the car keeps the same speed throughout the entire corner rather than changing at certain points of the corner. Secondly, the track segments themselves as well as the corner radii, are estimations, meaning unless better track data is obtained, this won't be 100% accurate. But there are also many ways to improve this model in the future, such as separating mechanical grip from aerodynamic grip. This will ultimately give us a more accurate depiction of how the car's velocity changes throughout corners. 
+
+## Planned development
+- Friction ellipse / combined tyre loading
+- Aero load varying with velocity
+- Energy consumption calculation
+- Regenerative braking model
+- GG diagram
+- Optimal racing line
+- Telemetry validation
